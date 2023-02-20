@@ -1,0 +1,23 @@
+.App{
+text-align: center;
+}
+
+.header{
+  height: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(5, 179, 92);
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.cardsContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.active{
+  color: red;
+}
