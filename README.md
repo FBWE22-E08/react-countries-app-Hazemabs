@@ -34,3 +34,11 @@ Second Page:
 <img src='./mockups/mock2.png' alt='region'/>
 Third Page:
 <img src='./mockups/mock3.png' alt='search'/>
+
+5) New task:
+
+- create a new page component and call it OneCountry
+- make a Route for it that accepts a parameter in it's path, name it (:code)
+- make the link that leads to this page so it contains CountryCard so that when we click anywhere inside that card it should take us to the page OneCountry along with the :code param which is coming from the country object under a property called alpha2Code (country.alpha2Code)
+- finally, make a fetch in OneCountry on page load, to fetch the country with the code you received in the URL parameter (:code), use this URL to do the fetch: 
+`https://restcountries.com/v2/alpha/${code}` then save the response object in a local state (country) and show at least 9 or 10 of its properties to the user
